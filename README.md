@@ -1,4 +1,3 @@
-# meu-portfolio
-Portfólio referente ao 6ª semestre de DSM
+# Meu portfólio referente ao 6ª semestre de DSM
 
 Link: https://castrogithub.github.io/meu-portfolio/
