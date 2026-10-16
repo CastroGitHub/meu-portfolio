@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio LDM | Fatec</title>
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones via FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO / HEADER -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Bem vindo ao meu portfólio!</a>
+            <nav class="nav">
+                <a href="#perfil">Dados Acadêmicos</a>
+                <a href="#faculdade">Experiências</a>
+                <a href="#experiencia">Idiomas</a>
+                <a href="#idiomas">Projetos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- SEÇÃO PERFIL (PÁGINA MESTRA - REQUISITOS 1 a 4) -->
+        <section id="perfil" class="card profile-card">
+            <div class="profile-header">
+                <!-- EDITE AQUI: Foto do Aluno -->
+                <img src="foto.jpeg" alt="Foto de perfil" class="profile-img">
+                <div class="profile-title">
+                    <!-- EDITE AQUI: Seu Nome Completo -->
+                    <h1>Gabriel de Castro Silva</h1>
+                    <p class="subtitle">Desenvolvedor Multiplataforma</p>
+                    <div class="github-link">
+                        <!-- EDITE AQUI: Seu Link do GitHub -->
+                        <a href="https://github.com/CastroGitHub" target="_blank" class="btn btn-github">
+                            <i class="fa-brands fa-github"></i> Meu GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO FACULDADE (REQUISITO 5) -->
+        <section id="faculdade" class="card">
+            <h2><i class="fa-solid fa-graduation-cap"></i> Dados Acadêmicos</h2>
+            <div class="academic-info">
+                <!-- EDITE AQUI: Informações da sua Faculdade -->
+                <p><strong>Faculdade:</strong> Fatec (Centro Paula Souza)</p>
+                <p><strong>Curso:</strong> Desenvolvimento de Software Multiplataforma (DSM)</p>
+                <p><strong>Início:</strong> 2024 / 1º Semestre</p>
+                <p><strong>Previsão de Conclusão:</strong> 2027 / 1º Semestre</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO EXPERIÊNCIA PROFISSIONAL (REQUISITO 6) -->
+        <section id="experiencia" class="card">
+            <h2><i class="fa-solid fa-briefcase"></i> Experiência Profissional</h2>
+            <div class="timeline">
+                <!-- EDITE AQUI: Suas Experiências -->
+                <div class="timeline-item">
+                    <h3>Assistente administrativo</h3>
+                    <p class="company"><strong>GT3 AutoParts </strong> | Início: Mai/2024 — Atual</p>
+                    <p class="description">Emissão de notas fiscais e etiquetas de pedidos de peças automotivas.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Estagiário de TI</h3>
+                    <p class="company"><strong>Colégio Satélite</strong> | Início: Jan/2023 — Desligamento: Dez/2023</p>
+                    <p class="description">Suporte técnico e montagem de computadores.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CURSOS E IDIOMAS (REQUISITOS 7 e 8) -->
+            <section id="idiomas" class="card">
+                <h2><i class="fa-solid fa-language"></i> Idiomas</h2>
+                <!-- EDITE AQUI: Seus Idiomas -->
+                <ul class="info-list">
+                    <li><strong>Português:</strong> Nativo</li>
+                    <li><strong>Inglês:</strong> Básico</li>
+                </ul>
+            </section>
+
+        <!-- SEÇÃO PORTFÓLIO DE PROJETOS (REQUISITO 9a - CARDS) -->
+        <section id="projetos" class="card">
+            <h2><i class="fa-solid fa-code"></i> Projetos dos Semestres</h2>
+            <p>Obs: O 7ª semestre não possui projeto integrador.</p>
+            
+            <div class="projects-grid">
+                <!-- Card 1º Semestre -->
+                <div class="project-card" onclick="openModal('semestre1')">
+                    <span class="badge">1º Semestre</span>
+                    <h3>Projeto Reciclar</h3>
+                    <p>Um site informativo de conscientização sobre reciclagem.</p>
+                    <button class="btn btn-primary">Ver Detalhes</button>
+                </div>
+
+                <!-- Card 2º Semestre -->
+                <div class="project-card" onclick="openModal('semestre2')">
+                    <span class="badge">2º Semestre</span>
+                    <h3>Fatec SALA</h3>
+                    <p>Um site para a gestão de laboratórios, salas e o agendamento de aulas.</p>
+                    <button class="btn btn-primary">Ver Detalhes</button>
+                </div>
+
+                <!-- Card 3º Semestre -->
+                <div class="project-card" onclick="openModal('semestre3')">
+                    <span class="badge">3º Semestre</span>
+                    <h3>Define Pilates</h3>
+                    <p>Um sistema para gerenciar as atividades de um estúdio de pilates.</p>
+                    <button class="btn btn-primary">Ver Detalhes</button>
+                </div>
+
+                <!-- Card 4º Semestre -->
+                <div class="project-card" onclick="openModal('semestre4')">
+                    <span class="badge">4º Semestre</span>
+                    <h3>DRI'AH Ateliê</h3>
+                    <p>Um sistema para atender as necessidades de um ateliê.</p>
+                    <button class="btn btn-primary">Ver Detalhes</button>
+                </div>
+
+                <!-- Card 5º Semestre -->
+                <div class="project-card" onclick="openModal('semestre5')">
+                    <span class="badge">5º Semestre</span>
+                    <h3>VEM Doar</h3>
+                    <p>Um aplicativo de "marketplace" para doações de itens.</p>
+                    <button class="btn btn-primary">Ver Detalhes</button>
+                </div>
+
+                <!-- Card 6º Semestre -->
+                <div class="project-card" onclick="openModal('semestre6')">
+                    <span class="badge">6º Semestre</span>
+                    <h3>Limp Ecologic</h3>
+                    <p>Um sistema para gestão uma empresa de higienização de estofados.</p>
+                    <button class="btn btn-primary">Ver Detalhes</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MODAL DE APRESENTAÇÃO DO PROJETO (REQUISITO 9b) -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Nome do Projeto</h2>
+            
+            <div class="modal-body">
+                <p><strong>Descrição do Projeto & Tecnologias Usadas:</strong></p>
+                <p id="modalDescription">Descrição aqui...</p>
+                
+                <p><strong>Link dos Códigos:</strong></p>
+                <p><a id="modalGithub" href="#" target="_blank" class="btn btn-github"><i class="fa-brands fa-github"></i> Repositório no GitHub</a></p>
+
+                <p><strong>Screenshots do Projeto:</strong></p>
+                <div id="modalScreenshots" class="screenshots-container"></div>
+
+                <p><strong>Minha Participação:</strong></p>
+                <p id="modalParticipation">Sua contribuição...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container">
+            <p>Portfólio Acadêmico — Laboratório de Desenvolvimento Multiplataforma (Fatec)</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT DE INTERAÇÃO DOS MODAIS -->
+    <script>
+        // EDITE AQUI: Dados dos seus projetos para cada semestre
+        const projectsData = {
+            semestre1: {
+                title: "Projeto Reciclar (1º Semestre)",
+                description: "O Projeto Reciclar foi desenvolvido de forma voluntária para apoiar uma ONG na missão de educar a comunidade sobre a importância da reciclagem de resíduos. Tecnologias: HTML, CSS e JavaScript.",
+                github: "https://github.com/Lucas-Retanero/Projeto_Reciclar",
+                screenshots: ["reciclar1.png", "reciclar2.png"],
+                participation: "Participei da prototipação e desenvolvimento do site."
+            },
+            semestre2: {
+                title: "Fatec SALA (2º Semestre)",
+                description: "O sistema permite que a Fatec faça o gerenciamento de usuários, criação e edição de salas/laboratórios e agendamentos, com validações de disponibilidade e horários. Tecnologias: PHP, Vue.js, JavaScript, MySQL.",
+                github: "https://github.com/Lucas-Retanero/SALA-Fatec",
+                screenshots: ["sala1.png", "sala2.png"],
+                participation: "Participei da documentação, prototipagem e desenvolvimento do frontend."
+            },
+            semestre3: {
+                title: "Define Pilates (3º Semestre)",
+                description: "O sistema permite gestão de aulas, agendamentos, alunos e professores. Tecnologias: Spring Boot, Thymeleaf, Java e MongoDB.",
+                github: "https://github.com/1GuiSouza1/PI-Pilates-backend",
+                screenshots: ["pilates1.png", "pilates2.png"],
+                participation: "Participei da prototipação, documentação e desenvolvimento do frontend."
+            },
+            semestre4: {
+                title: "DRI'AH Ateliê (4º Semestre)",
+                description: "O sistema permite gerenciar serviços e clientes do proprietário do ateliê. Tecnologias: JavaScript, Java e Vue.js.",
+                github: "https://github.com/TheHive-Atelie/DriAtelie",
+                screenshots: ["atelie1.png", "atelie2.png"],
+                participation: "Participei da prototipagem, documentação e desenvolvimento do frontend."
+            },
+            semestre5: {
+                title: "VEM Doar (5º Semestre)",
+                description: "O app permite a fácil comunicação entre instituições e doadores para que itens indesejados sejam doados e ONG's possam suprir as suas necessidades recorrentes. Tecnologias: React Native.",
+                github: "https://github.com/raphaelmicucci/VEM-doar-side",
+                screenshots: ["Projeto em desenvolvimento."],
+                participation: "Estou atuando na elaboração do artigo e no desenvolvimento do app."
+            },
+            semestre6: {
+                title: "Limp Ecologic (6º Semestre)",
+                description: "O sistema multiplataforma permite gerenciar clientes e agendamentos de uma empresa focada em limpeza e higienização de estofados chamada Limp Ecologic. Tecnologias: Kotlin e Spring Boot.",
+                github: "https://github.com/CastroGitHub/limp-ecologic-kotlin",
+                screenshots: ["Projeto em desenvolvimento."],
+                participation: "Estou atuando em todas as fases do projeto."
+            }
+        };
+
+        function openModal(semesterKey) {
+            const data = projectsData[semesterKey];
+            if (!data) return;
+
+            document.getElementById('modalTitle').innerText = data.title;
+            document.getElementById('modalDescription').innerText = data.description;
+            document.getElementById('modalGithub').href = data.github;
+            document.getElementById('modalParticipation').innerText = data.participation;
+
+            const screenshotsContainer = document.getElementById('modalScreenshots');
+            screenshotsContainer.innerHTML = '';
+            data.screenshots.forEach(src => {
+                const img = document.createElement('img');
+                img.src = src;
+                img.alt = 'Projeto em desenvolvimento.';
+                img.className = 'modal-img';
+                screenshotsContainer.appendChild(img);
+            });
+
+            document.getElementById('projectModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('projectModal').style.display = 'none';
+        }
+
+        // Fechar o modal ao clicar fora dele
+        window.onclick = function(event) {
+            const modal = document.getElementById('projectModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
